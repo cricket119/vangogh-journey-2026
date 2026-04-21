@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f8f5ee">
+<meta name="description" content="追寻梵高之旅 · 2026暑期亲子人文之旅 · 10天9夜 · 荷兰 × 法国 · 法律先生出品">
+<meta property="og:title" content="追寻梵高之旅 · 用热情点亮世界">
+<meta property="og:description" content="2026暑期亲子人文之旅 · 10天9夜 · 从阿姆斯特丹到奥维尔，沿着梵高的足迹走一遍">
+<meta property="og:type" content="website">
+<title>追寻梵高之旅 · 用热情点亮世界 · 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#fdfbf5;
+    --paper-warm:#f6efdc;
+    --ink:#15263d;
+    --ink-soft:#2a2a2a;
+    --gray:#6d6d6d;
+    --gray-soft:#999;
+    --gold:#b38a3d;
+    --gold-deep:#8d6a28;
+    --gold-light:#d9ba76;
+    --navy:#15263d;
+    --navy-soft:#22456b;
+    --hairline:rgba(21,38,61,0.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+  html,body{background:var(--paper);color:var(--ink-soft);font-family:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75;font-size:16px}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit;text-decoration:none}
+  .serif{font-family:"Noto Serif SC","Songti SC","SimSun",serif;font-weight:400;letter-spacing:0.02em}
+  .latin{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-weight:400}
+  .sans-latin{font-family:"Inter","Helvetica Neue",Arial,sans-serif;letter-spacing:0.08em}
+
+  /* ── NAV ─────────────────────────────────────────── */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px 22px;background:rgba(253,251,245,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--hairline)}
+  .brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:0.12em;color:var(--navy)}
+  .brand-seal{width:22px;height:22px;border:1px solid var(--gold);display:inline-flex;align-items:center;justify-content:center;font-family:"Noto Serif SC",serif;font-size:12px;color:var(--navy);position:relative}
+  .brand-seal::before{content:"";position:absolute;top:0;left:0;width:4px;height:4px;background:var(--gold)}
+  .brand-seal::after{content:"";position:absolute;bottom:0;right:0;width:4px;height:4px;background:var(--gold)}
+  .nav-cta{padding:9px 18px;border:1px solid var(--navy);border-radius:100px;font-size:12px;letter-spacing:0.06em;color:var(--navy);transition:all .25s}
+  .nav-cta:hover{background:var(--navy);color:var(--paper)}
+
+  /* ── HERO ────────────────────────────────────────── */
+  .hero{min-height:100vh;min-height:100svh;padding:100px 24px 60px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+  .hero-top{display:flex;justify-content:space-between;align-items:flex-start;font-size:11px;letter-spacing:0.18em;color:var(--gold);text-transform:uppercase}
+  .hero-top span{display:block;color:var(--gray);letter-spacing:0.08em;text-transform:none;font-size:12px;margin-top:4px}
+  .hero-title-wrap{padding:40px 0}
+  .hero-title{font-family:"Noto Serif SC",serif;font-weight:500;color:var(--navy);font-size:clamp(42px,10vw,96px);line-height:1.05;letter-spacing:0.02em}
+  .hero-sub{margin-top:28px;font-family:"Noto Serif SC",serif;color:var(--gold);font-size:clamp(18px,4vw,28px);letter-spacing:0.3em;font-weight:300}
+  .hero-en{margin-top:16px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(18px,3.5vw,24px);color:var(--gray)}
+  .hero-tagline{margin-top:40px;font-size:clamp(14px,3.5vw,17px);color:var(--ink-soft);max-width:520px;line-height:1.9}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:22px 36px;margin-top:44px;padding-top:28px;border-top:1px solid var(--hairline);font-size:12px;letter-spacing:0.04em;color:var(--gray)}
+  .hero-meta strong{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--navy);font-weight:500;line-height:1}
+  .hero-meta span{display:block;margin-top:6px}
+  .hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;font-family:"Cormorant Garamond",serif;color:var(--gray);font-size:13px;font-style:italic;letter-spacing:0.06em}
+
+  /* ── FULL-BLEED IMAGE ────────────────────────────── */
+  .bleed{margin:80px 0 0;padding:0}
+  .bleed figure{margin:0}
+  .bleed img{width:100%;display:block}
+  .bleed figcaption{padding:14px 24px 0;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14px;color:var(--gray);letter-spacing:0.04em}
+
+  /* ── STORY ───────────────────────────────────────── */
+  section{padding:90px 24px;max-width:760px;margin:0 auto}
+  .kicker{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:14px;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:14px}
+  .section-title{font-family:"Noto Serif SC",serif;font-weight:500;color:var(--navy);font-size:clamp(28px,6vw,44px);line-height:1.25;margin-bottom:24px;letter-spacing:0.01em}
+  .lead{font-size:clamp(17px,4vw,20px);line-height:1.9;color:var(--ink-soft);margin-bottom:28px}
+  p{font-size:clamp(15px,3.8vw,17px);line-height:1.95;color:var(--ink-soft);margin-bottom:22px}
+  p.q{font-family:"Noto Serif SC",serif;font-size:clamp(18px,4.5vw,23px);line-height:1.7;color:var(--navy);border-left:2px solid var(--gold);padding-left:22px;margin:32px 0;font-style:italic;font-weight:400}
+
+  /* ── STATS BAND ──────────────────────────────────── */
+  .stats{background:var(--paper-warm);padding:72px 24px;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+  .stats-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+  .stat-num{font-family:"Cormorant Garamond",serif;font-weight:500;color:var(--navy);font-size:clamp(40px,8vw,72px);line-height:1}
+  .stat-lbl{margin-top:12px;font-size:13px;color:var(--gray);letter-spacing:0.12em}
+  @media (max-width:600px){.stats-inner{grid-template-columns:repeat(2,1fr);gap:40px 20px}}
+
+  /* ── ROUTE ───────────────────────────────────────── */
+  .route{background:var(--paper);padding:90px 24px}
+  .route-inner{max-width:720px;margin:0 auto}
+  .route-list{margin:40px 0 0;padding:0;list-style:none;position:relative}
+  .route-list::before{content:"";position:absolute;left:12px;top:10px;bottom:10px;width:1px;background:linear-gradient(to bottom,transparent,var(--gold),var(--gold),transparent)}
+  .route-list li{position:relative;padding:16px 0 16px 44px;display:flex;align-items:baseline;gap:18px;border-bottom:1px dashed var(--hairline)}
+  .route-list li:last-child{border-bottom:none}
+  .route-list li::before{content:"";position:absolute;left:8px;top:24px;width:10px;height:10px;background:var(--paper);border:1.5px solid var(--gold);border-radius:50%;z-index:1}
+  .route-list li.highlight::before{background:var(--gold)}
+  .route-city{font-family:"Noto Serif SC",serif;font-size:20px;color:var(--navy);font-weight:500;flex-shrink:0;min-width:95px}
+  .route-en{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:15px;flex-shrink:0;min-width:95px}
+  .route-note{color:var(--gray);font-size:14px;line-height:1.7}
+
+  /* ── ITINERARY TEASER ───────────────────────────── */
+  .itin{padding:90px 24px;max-width:960px;margin:0 auto}
+  .itin-grid{margin-top:40px;display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--hairline)}
+  .itin-card{padding:28px 24px;border-bottom:1px solid var(--hairline);border-right:1px solid var(--hairline)}
+  .itin-card:nth-child(2n){border-right:none}
+  .itin-day{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:13px;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:8px}
+  .itin-title{font-family:"Noto Serif SC",serif;color:var(--navy);font-size:19px;margin-bottom:8px;font-weight:500;line-height:1.4}
+  .itin-city{color:var(--gray);font-size:13px;letter-spacing:0.05em}
+  @media (max-width:600px){.itin-grid{grid-template-columns:1fr}.itin-card{border-right:none}}
+
+  /* ── SEMINARS ────────────────────────────────────── */
+  .seminars{background:var(--navy);color:var(--paper);padding:90px 24px}
+  .seminars-inner{max-width:860px;margin:0 auto}
+  .seminars .kicker{color:var(--gold-light)}
+  .seminars .section-title{color:var(--paper)}
+  .seminar-grid{margin-top:50px;display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
+  .seminar-card{border-left:1px solid var(--gold);padding-left:24px}
+  .seminar-tag{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold-light);font-size:13px;letter-spacing:0.15em;margin-bottom:10px}
+  .seminar-title{font-family:"Noto Serif SC",serif;font-size:22px;margin-bottom:16px;font-weight:500;color:#fff}
+  .seminar-desc{color:rgba(253,251,245,0.75);font-size:15px;line-height:1.85}
+  @media (max-width:600px){.seminar-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* ── MENTOR ──────────────────────────────────────── */
+  .mentor{padding:90px 24px;max-width:760px;margin:0 auto}
+  .mentor-card{margin-top:36px;padding:40px 30px;background:var(--paper-warm);border-left:3px solid var(--gold)}
+  .mentor-role{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:14px;letter-spacing:0.15em;margin-bottom:14px}
+  .mentor-name{font-family:"Noto Serif SC",serif;color:var(--navy);font-size:36px;margin-bottom:6px;font-weight:500;letter-spacing:0.08em}
+  .mentor-en{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:13px;letter-spacing:0.2em;margin-bottom:20px}
+  .mentor-bio{color:var(--ink-soft);font-size:15px;line-height:1.9}
+
+  /* ── PRICING ─────────────────────────────────────── */
+  .pricing{padding:90px 24px;background:var(--paper);max-width:1040px;margin:0 auto}
+  .pricing .section-title,.pricing .kicker,.pricing .lead{text-align:center;margin-left:auto;margin-right:auto}
+  .pricing .lead{max-width:540px}
+  .price-grid{margin-top:54px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .price-card{padding:40px 24px;text-align:center;background:var(--paper-warm);border:1px solid var(--hairline);transition:transform .3s,box-shadow .3s}
+  .price-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(21,38,61,0.18)}
+  .price-card.featured{background:var(--navy);color:var(--paper);border-color:var(--navy)}
+  .price-label{font-size:13px;color:var(--gray);letter-spacing:0.25em}
+  .price-card.featured .price-label{color:var(--gold-light)}
+  .price-val{margin:22px 0 8px;font-family:"Cormorant Garamond",serif;font-size:48px;font-weight:500;color:var(--navy);letter-spacing:0.01em}
+  .price-card.featured .price-val{color:#fff}
+  .price-rule{width:40px;height:1px;background:var(--gold);margin:14px auto}
+  .price-note{font-size:13px;color:var(--gray);line-height:1.7}
+  .price-card.featured .price-note{color:rgba(253,251,245,0.75)}
+  @media (max-width:700px){.price-grid{grid-template-columns:1fr;gap:14px}}
+
+  /* ── INCLUDES ─────────────────────────────────── */
+  .includes{max-width:760px;margin:50px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;text-align:left}
+  .includes h4{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:14px;letter-spacing:0.15em;margin-bottom:12px}
+  .includes p{font-size:13.5px;color:var(--gray);line-height:1.85;margin:0}
+  @media (max-width:700px){.includes{grid-template-columns:1fr;gap:22px}}
+
+  /* ── CTA ─────────────────────────────────────────── */
+  .cta{padding:100px 24px;background:var(--paper-warm);text-align:center}
+  .cta-inner{max-width:620px;margin:0 auto}
+  .cta .section-title{margin-bottom:18px}
+  .cta p{font-size:16px;color:var(--gray);margin-bottom:40px}
+  .qr-wrap{display:inline-block;padding:22px;background:#fff;border:1px solid var(--hairline);margin-bottom:24px}
+  .qr{width:200px;height:200px;background:repeating-linear-gradient(45deg,#fff,#fff 4px,#e7e0ce 4px,#e7e0ce 8px);display:flex;align-items:center;justify-content:center;position:relative;border:1px dashed var(--gold)}
+  .qr-text{background:var(--paper);padding:6px 14px;font-size:11px;color:var(--gold-deep);letter-spacing:0.1em;border:1px solid var(--gold);font-family:"Cormorant Garamond",serif;font-style:italic}
+  .qr-label{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gray);margin-top:10px;font-size:13px;letter-spacing:0.1em}
+  .wx-handle{margin-top:36px;padding:18px 34px;background:var(--navy);color:var(--paper);display:inline-block;font-size:17px;letter-spacing:0.08em;border-radius:100px;font-weight:500}
+  .wx-handle .wx-id{font-family:"Cormorant Garamond",serif;color:var(--gold-light);font-size:19px;letter-spacing:0.18em;margin-left:12px;padding-left:12px;border-left:1px solid rgba(217,186,118,0.4)}
+  .sub-cta{margin-top:28px;font-size:14px;color:var(--gray)}
+  .sub-cta a{color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:2px}
+
+  /* ── FOOTER ─────────────────────────────────────── */
+  footer{padding:60px 24px 40px;text-align:center;border-top:1px solid var(--hairline);background:var(--paper)}
+  .footer-brand{font-family:"Noto Serif SC",serif;color:var(--navy);letter-spacing:0.2em;font-size:15px;margin-bottom:8px}
+  .footer-en{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:13px;letter-spacing:0.18em;margin-bottom:24px}
+  .footer-meta{color:var(--gray);font-size:12px;letter-spacing:0.06em;line-height:2}
+  .footer-quote{margin:32px auto 24px;max-width:460px;font-family:"Noto Serif SC",serif;font-style:italic;font-size:15px;color:var(--navy);line-height:1.9}
+
+  /* ── SECTION DIVIDER ─────────────────────────────── */
+  .divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto;padding:20px 0;max-width:300px}
+  .divider hr{flex:1;border:none;border-top:1px solid var(--gold);opacity:0.6}
+  .divider span{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:13px;letter-spacing:0.2em}
+
+  /* ── UTILITIES ───────────────────────────────────── */
+  .u-center{text-align:center}
+  .muted{color:var(--gray)}
+
+  @media (max-width:600px){
+    nav{padding:12px 16px}
+    .nav-cta{padding:7px 14px;font-size:11px}
+    .brand{font-size:11px;letter-spacing:0.08em}
+    .hero{padding:84px 20px 44px}
+    .hero-meta{gap:20px 26px}
+    .hero-meta strong{font-size:28px}
+    section{padding:64px 20px}
+    .stats{padding:56px 20px}
+    .route{padding:64px 20px}
+    .itin{padding:64px 20px}
+    .seminars{padding:64px 20px}
+    .mentor{padding:64px 20px}
+    .pricing{padding:64px 20px}
+    .cta{padding:80px 20px}
+    .mentor-card{padding:32px 22px}
+    .wx-handle{font-size:15px;padding:16px 26px}
+    .wx-handle .wx-id{font-size:16px;margin-left:8px;padding-left:10px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav>
+  <div class="brand">
+    <span class="brand-seal">法</span>
+    <span>法 律 先 生 · MR. LAW</span>
+  </div>
+  <a href="#cta" class="nav-cta">咨 询 报 名</a>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero">
+  <div class="hero-top">
+    <div>
+      <div>ART · FAMILY · EUROPE · MMXXVI</div>
+      <span>2026 亲子人文之旅 · 10 天 9 夜 · 荷兰 × 法国</span>
+    </div>
+    <div style="text-align:right">
+      <div class="latin" style="font-size:13px;letter-spacing:0.1em">No. 001</div>
+      <span>SUMMER · 2026</span>
+    </div>
+  </div>
+
+  <div class="hero-title-wrap">
+    <h1 class="hero-title">追寻梵高<br>之旅</h1>
+    <div class="hero-sub">用&nbsp;热&nbsp;情&nbsp;点&nbsp;亮&nbsp;世&nbsp;界</div>
+    <div class="hero-en">In the Footsteps of Van Gogh</div>
+    <p class="hero-tagline">一场为律师家庭量身设计的亲子人文之旅——<br>父母触摸艺术之魂，孩子发现热爱的力量。<br>从阿姆斯特丹到奥维尔，沿着梵高一生的足迹，走过七座城市。</p>
+    <div class="hero-meta">
+      <div><strong>10</strong><span>天 · DAYS</span></div>
+      <div><strong>7</strong><span>城 · CITIES</span></div>
+      <div><strong>2</strong><span>场座谈 · SEMINARS</span></div>
+      <div><strong>2</strong><span>家律所 · LAW FIRMS</span></div>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <div>VINCENT VAN GOGH · 1853 — 1890</div>
+    <div>2026.07.19 — 07.28</div>
+  </div>
+</header>
+
+<!-- ═══════════ FULL-BLEED STARRY NIGHT ═══════════ -->
+<div class="bleed">
+  <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1920px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+         alt="梵高《星月夜》"
+         loading="eager">
+    <figcaption>Vincent van Gogh, <em>The Starry Night</em>, 1889. Museum of Modern Art, New York.</figcaption>
+  </figure>
+</div>
+
+<!-- ═══════════ WHY SECTION ═══════════ -->
+<section>
+  <div class="kicker">Why Van Gogh</div>
+  <h2 class="section-title">有些人用一生证明——<br>热爱本身，就是抵抗黯淡世界的答案。</h2>
+  <p class="lead">文森特·梵高（Vincent van Gogh，1853—1890），一个在世时只卖出过一幅画的荷兰画家，在 37 年的短暂生命里，画了约 2100 幅作品——其中超过 860 幅油画大都诞生于他人生最后的两年。</p>
+  <p>他被拒绝、被嘲笑、被视作精神病人，却从未停下画笔。他写给弟弟提奥的信中有这样一句话：</p>
+  <p class="q">我梦想着绘画，然后我画下我的梦。</p>
+  <p>今天，他的《向日葵》《星月夜》《麦田群鸦》成为全人类共同的艺术语言。他让我们重新相信——一个人的热情，真的可以点亮整个世界。</p>
+  <p>法律先生为热爱梵高故事的家庭，重新设计了一场亲子人文之旅：从阿姆斯特丹特列别馆出发，从《吃马铃薯的人》的荷兰田野，到《向日葵》的阿尔勒阳光，再到《星月夜》的圣雷米夜空，我们沿着他的画，也走进他的人生。</p>
+</section>
+
+<!-- ═══════════ STATS BAND ═══════════ -->
+<div class="stats">
+  <div class="stats-inner">
+    <div><div class="stat-num">37</div><div class="stat-lbl">年 · LIFE</div></div>
+    <div><div class="stat-num">2100</div><div class="stat-lbl">幅作品 · WORKS</div></div>
+    <div><div class="stat-num">860</div><div class="stat-lbl">幅油画 · OIL</div></div>
+    <div><div class="stat-num">7</div><div class="stat-lbl">梵高之城 · CITIES</div></div>
+  </div>
+</div>
+
+<!-- ═══════════ FULL-BLEED SUNFLOWERS ═══════════ -->
+<div class="bleed">
+  <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_128.jpg/1280px-Vincent_Willem_van_Gogh_128.jpg"
+         alt="梵高《向日葵》"
+         loading="lazy">
+    <figcaption>Vincent van Gogh, <em>Sunflowers</em>, 1888. National Gallery, London.</figcaption>
+  </figure>
+</div>
+
+<!-- ═══════════ ROUTE ═══════════ -->
+<div class="route">
+  <div class="route-inner">
+    <div class="kicker">The Route · 7 Cities</div>
+    <h2 class="section-title">沿着他的一生<br>走过七座梵高之城</h2>
+    <p class="lead muted">从荷兰童年的北布拉班特，到法国南部的普罗旺斯阳光；从巴黎蒙马特的艺术激辩，到奥维尔麦田的最后时光——这是一条艺术朝圣之路。</p>
+
+    <ul class="route-list">
+      <li class="highlight"><span class="route-city">阿姆斯特丹</span><span class="route-en">Amsterdam</span><span class="route-note">梵高博物馆 · 特展与黄金时代</span></li>
+      <li><span class="route-city">津德特</span><span class="route-en">Zundert</span><span class="route-note">梵高出生地 · 童年与信仰</span></li>
+      <li><span class="route-city">纽南</span><span class="route-en">Nuenen</span><span class="route-note">《吃马铃薯的人》创作地 · 乡村写生</span></li>
+      <li class="highlight"><span class="route-city">巴黎</span><span class="route-en">Paris</span><span class="route-note">奥赛博物馆 · 蒙马特 · 律所交流</span></li>
+      <li class="highlight"><span class="route-city">阿尔勒</span><span class="route-en">Arles</span><span class="route-note">向日葵 · 黄房子 · 夜间咖啡馆</span></li>
+      <li><span class="route-city">圣雷米</span><span class="route-en">Saint-Rémy</span><span class="route-note">《星月夜》诞生地 · 圣保罗修道院</span></li>
+      <li class="highlight"><span class="route-city">奥维尔</span><span class="route-en">Auvers-sur-Oise</span><span class="route-note">最后的麦田 · 长眠之地</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════ FULL-BLEED WHEAT FIELD ═══════════ -->
+<div class="bleed">
+  <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg/1920px-Vincent_van_Gogh_-_Wheatfield_with_crows_-_Google_Art_Project.jpg"
+         alt="梵高《麦田群鸦》"
+         loading="lazy">
+    <figcaption>Vincent van Gogh, <em>Wheatfield with Crows</em>, 1890. Van Gogh Museum, Amsterdam.</figcaption>
+  </figure>
+</div>
+
+<!-- ═══════════ ITINERARY TEASER ═══════════ -->
+<div class="itin">
+  <div class="u-center">
+    <div class="kicker">10 Days · 9 Nights</div>
+    <h2 class="section-title">十天九夜<br>一场关于热爱的人生课</h2>
+  </div>
+  <div class="itin-grid">
+    <div class="itin-card"><div class="itin-day">Day 01</div><div class="itin-title">抵达阿姆斯特丹</div><div class="itin-city">中国 → 阿姆斯特丹</div></div>
+    <div class="itin-card"><div class="itin-day">Day 02</div><div class="itin-title">梵高博物馆 · 荷兰黄金时代</div><div class="itin-city">阿姆斯特丹</div></div>
+    <div class="itin-card"><div class="itin-day">Day 03</div><div class="itin-title">梵高出生地 · 童年与信仰</div><div class="itin-city">津德特 → 纽南</div></div>
+    <div class="itin-card"><div class="itin-day">Day 04</div><div class="itin-title">色彩觉醒之城</div><div class="itin-city">纽南 → 巴黎</div></div>
+    <div class="itin-card"><div class="itin-day">Day 05</div><div class="itin-title">奥赛博物馆 · 律所 1 参访</div><div class="itin-city">巴黎</div></div>
+    <div class="itin-card"><div class="itin-day">Day 06</div><div class="itin-title">律所 2 · 前往普罗旺斯</div><div class="itin-city">巴黎 → 阿尔勒</div></div>
+    <div class="itin-card"><div class="itin-day">Day 07</div><div class="itin-title">向日葵与黄房子</div><div class="itin-city">阿尔勒</div></div>
+    <div class="itin-card"><div class="itin-day">Day 08</div><div class="itin-title">星月夜之夜</div><div class="itin-city">阿尔勒 → 圣雷米</div></div>
+    <div class="itin-card"><div class="itin-day">Day 09</div><div class="itin-title">奥维尔 · 最后的风景</div><div class="itin-city">普罗旺斯 → 奥维尔</div></div>
+    <div class="itin-card"><div class="itin-day">Day 10</div><div class="itin-title">返程 · 启程回家</div><div class="itin-city">巴黎 → 中国</div></div>
+  </div>
+</div>
+
+<!-- ═══════════ SEMINARS ═══════════ -->
+<div class="seminars">
+  <div class="seminars-inner">
+    <div class="kicker">Seminars &amp; Law Firms</div>
+    <h2 class="section-title">两场艺术座谈<br>两家律所交流</h2>
+    <p style="color:rgba(253,251,245,0.8);font-size:16px;line-height:1.85;margin-top:18px;max-width:620px">艺术让孩子看见世界之美，律所让父母思考法律与艺术的交汇——这是法律先生为律师家庭量身设计的「双线并行」结构。</p>
+    <div class="seminar-grid">
+      <div class="seminar-card">
+        <div class="seminar-tag">Seminar 01 · Amsterdam</div>
+        <div class="seminar-title">梵高的精神宇宙</div>
+        <div class="seminar-desc">与当地艺术家对谈——梵高的信仰、疾病、爱情与艺术的不可分割性。他不是一个被浪漫化的疯子，而是一个用全部生命追问「美与意义」的思想者。</div>
+      </div>
+      <div class="seminar-card">
+        <div class="seminar-tag">Seminar 02 · Arles</div>
+        <div class="seminar-title">用热情点亮世界<br><span style="font-size:14px;color:var(--gold-light);font-family:'Cormorant Garamond',serif;font-style:italic;letter-spacing:0.1em">梵高的普罗旺斯 444 天</span></div>
+        <div class="seminar-desc">1888 年 2 月—1889 年 5 月，梵高在阿尔勒创作了 300 余幅作品。艺术家的「黄金期」是怎样诞生的？热爱、孤独、友情（与高更的冲突）如何共同塑造一个艺术家的灵魂？</div>
+      </div>
+    </div>
+
+    <div style="margin-top:56px;padding-top:36px;border-top:1px solid rgba(217,186,118,0.25);display:grid;grid-template-columns:repeat(2,1fr);gap:30px">
+      <div>
+        <div class="seminar-tag">Law Firm 01</div>
+        <div style="color:#fff;font-family:'Noto Serif SC',serif;font-size:18px;margin-bottom:10px;font-weight:500">艺术法 · 跨境艺术市场</div>
+        <div style="color:rgba(253,251,245,0.7);font-size:14px;line-height:1.85">国际艺术品交易的法律框架、真伪鉴定与来源追溯、艺术拍卖行法律风险、中欧艺术品跨境流通实务。</div>
+      </div>
+      <div>
+        <div class="seminar-tag">Law Firm 02</div>
+        <div style="color:#fff;font-family:'Noto Serif SC',serif;font-size:18px;margin-bottom:10px;font-weight:500">文物保护 · 艺术家基金会</div>
+        <div style="color:rgba(253,251,245,0.7);font-size:14px;line-height:1.85">UNESCO 文物保护公约、艺术家遗产继承、艺术家基金会（Fondation）法律结构、跨国追索与归还案例。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ MENTOR ═══════════ -->
+<div class="mentor">
+  <div class="kicker">Lead Mentor</div>
+  <h2 class="section-title">随行导师 · 全程带队</h2>
+  <div class="mentor-card">
+    <div class="mentor-role">随 行 导 师</div>
+    <div class="mentor-name">彭　帅</div>
+    <div class="mentor-en">MR. PENG SHUAI</div>
+    <div class="mentor-bio">法律先生创始人 · 全程带队。深耕中欧法律交流十余年，长期关注艺术法、文化遗产、跨境家族传承等议题。本次亲子人文之旅由彭帅亲自设计、全程带队——与每一个家庭一起，在梵高的足迹中重读「热爱」二字。</div>
+  </div>
+  <p style="margin-top:36px;color:var(--gray);font-size:15px">每一座城市，我们还将邀请一位本地艺术家同行讲解——他们是长居当地的画家、插画师、艺术教育者，用本地人的眼光与笔触，陪我们一起走进梵高笔下的城市。</p>
+</div>
+
+<!-- ═══════════ PRICING ═══════════ -->
+<div class="pricing">
+  <div class="kicker">Pricing</div>
+  <h2 class="section-title">费用标准</h2>
+  <p class="lead">含境外全程 · 不含国际机票</p>
+
+  <div class="price-grid">
+    <div class="price-card">
+      <div class="price-label">标 准 价</div>
+      <div class="price-val">¥52,800</div>
+      <div class="price-rule"></div>
+      <div class="price-note">不含国际机票<br>含境外全程</div>
+    </div>
+    <div class="price-card featured">
+      <div class="price-label">早 鸟 价</div>
+      <div class="price-val">¥47,800</div>
+      <div class="price-rule"></div>
+      <div class="price-note">截止日期另行通知<br>限额先到先得</div>
+    </div>
+    <div class="price-card">
+      <div class="price-label">儿 童 价</div>
+      <div class="price-val">¥31,680</div>
+      <div class="price-rule"></div>
+      <div class="price-note">15 岁以下孩子享 6 折<br>早鸟同比例优惠</div>
+    </div>
+  </div>
+
+  <div class="includes">
+    <div>
+      <h4>Included</h4>
+      <p>境外全程精品酒店（含早餐）· 城际高铁一等座 · 全部门票 · 当地交通 · 特邀嘉宾讲座 · 中英翻译 · 团体餐食 · 儿童艺术陪伴 · 油画速写材料包</p>
+    </div>
+    <div>
+      <h4>Not Included</h4>
+      <p>国际机票 · 个人消费 · 申根签证费 · 个人旅游保险（出发前须自行购买）</p>
+    </div>
+    <div>
+      <h4>Visa</h4>
+      <p>申根签证（荷兰入境 · 法国出境），建议提前 2 个月申请；携子女出行需准备监护证明文件</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CTA ═══════════ -->
+<div class="cta" id="cta">
+  <div class="cta-inner">
+    <div class="kicker">Reserve Your Seat</div>
+    <h2 class="section-title">限额 20 组家庭<br>先到先得</h2>
+    <p>添加微信咨询 · 获取完整招生简章 · 领取早鸟优惠名额</p>
+
+    <div class="qr-wrap">
+      <div class="qr">
+        <div class="qr-text">WeChat QR · 替换为真实二维码</div>
+      </div>
+      <div class="qr-label">微信扫码 · 咨询报名</div>
+    </div>
+
+    <div>
+      <div class="wx-handle">添加微信 <span class="wx-id">flxs77</span></div>
+    </div>
+
+    <div class="sub-cta">
+      或 <a href="./brochure.pdf" target="_blank">下载完整招生简章 PDF</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="divider"><hr><span>法　律　先　生</span><hr></div>
+
+  <div class="footer-quote">「在阿尔勒梵高的向日葵丛中，读懂对生命的热爱。<br>用热情与艺术，点亮未来之路。」</div>
+
+  <div class="footer-brand">法 律 先 生</div>
+  <div class="footer-en">MR. LAW · IN THE FOOTSTEPS OF VAN GOGH</div>
+
+  <div class="footer-meta">
+    2026 亲子人文之旅 · 10 天 9 夜 · 荷兰 × 法国<br>
+    联合主办：法律先生 · 中欧法律基金会 · 世界青年律师论坛 · 粤港澳大湾区金融研究院 · 法律先生出海研究院<br>
+    <span style="color:var(--gold-light)">© 2026 Mr. Law · All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
